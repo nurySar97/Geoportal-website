@@ -1,0 +1,874 @@
+@import url('"https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap"');
+
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.container-nav {
+    position: relative;
+    width: 100%;
+    max-width: 1172px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color .2s linear;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link span {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: lowercase;
+    transition: color .2s linear;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link span:hover {
+    color: black;
+}
+
+
+
+.nav__logo {
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+}
+
+
+
+.nav__title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 138.27%;
+    margin-left: 11px;
+    color: #fff;
+}
+
+
+
+.navbar-nav {
+    text-align: end;
+}
+
+
+
+
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+
+
+.carousel-caption h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 160%;
+    letter-spacing: .02em;
+    color: #fff;
+}
+
+
+
+.carousel-caption p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: .02em;
+    color: #fff;
+}
+
+
+
+.carousel-indicators {
+    justify-content: left;
+}
+
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+
+
+.carousel-indicators li:first-child {
+    margin-left: 0;
+}
+
+
+
+.btn-primary {
+    margin-top: 50px;
+    background: #005FA3;
+    width: 168px;
+    height: 54.06px;
+    color: #fff;
+    border-radius: none;
+}
+
+
+
+.btn-primary:hover {
+    background: rgb(48, 78, 100);
+}
+
+
+
+/* Jumbotron */
+
+.container .lead {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+}
+
+
+
+.display-4.after__lead {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 100%;
+
+    display: flex;
+    align-items: center;
+
+
+    color: #333333;
+}
+
+
+
+.container-fluid.container-jumbotron {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.card {
+    margin: 30px 30px 0 0;
+}
+
+
+
+.card:nth-child(3){
+    margin-right: 0; 
+}
+
+
+.card:nth-child(6) {
+    margin-right: 0;
+}
+
+
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.jumbotron-logo {
+    position: absolute;
+    top: 70px;
+    width: 78.33px;
+    height: 94px;
+    fill: #fff;
+
+    transition: transform .2s linear;
+}
+
+
+
+.card-title span {
+    position: absolute;
+    bottom: 45.3px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 1;
+    color: #FFFFFF;
+
+}
+
+
+
+.card-hand {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 40;
+    opacity: 0;
+    transition: opacity .2s linear;
+
+    background: linear-gradient(0deg, rgba(0, 95, 163, .65), rgba(0, 95, 163, 0.65));
+}
+
+
+
+.card-hand:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.jumbotron-logo:hover {
+    transform: translateY(-10%);
+}
+
+
+
+
+
+
+/* Two column section */
+
+.container-fluid.firstColumn {
+    width: 100%;
+    max-width: 470px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.container-fluid.firstColumn h2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #BDBDBD
+}
+
+
+
+.firstColumn-p1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 100%;
+
+    display: flex;
+    align-items: center;
+
+
+    color: #333333;
+}
+
+
+
+.firstColumn-text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+
+
+
+/* secondColumn */
+
+
+
+.card-secondColumn {
+    display: flex;
+    width: 270px;
+    height: 270px;
+    border: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EBEBEB;
+
+    transition: background-color .2s linear;
+}
+
+.card-secondColumn:hover {
+    background-color:  #005FA3;;
+    fill: #fff;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+.secondColumn-logo {
+    margin-left: 20%;
+    width: 82px;
+    height: 91px;
+}
+
+
+
+
+.secondColumn-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+
+
+
+/* About */
+
+.container-about {
+    margin-top: 135px;
+    text-align: center;
+    background: url('../images/image\ 3.png');
+}
+
+
+
+.btn.btn-primary {
+    width: 225.47px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    margin-top: 66px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.btn.btn-light {
+    width: 225.47px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    margin-top: 66px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+.about__title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 144.55%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    margin-top: 51px;
+}
+
+
+
+
+.about-logo {
+    width: 274px;
+    height: 274px;
+    margin-top: 50px;
+}
+
+
+
+.about__text {
+    margin-top: 200px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    color: #FFFFFF;
+    width: 470px;
+    height: 245px;
+}
+
+
+
+.col-about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+/* Contact */
+
+
+.container-fluid.contact {
+    background: url('../images/image\ 2.png');
+}
+
+
+
+
+.contact__inner {
+    text-align: center;
+}
+
+
+
+.contact__text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 144.55%;
+
+    color: #FFFFFF;
+    margin-top: 74px;
+}
+
+
+
+
+
+.contact__context {
+    margin-top: 6px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 138%;
+
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 76px;
+}
+
+
+.contact__item {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 132%;
+    margin-bottom: 36px;
+
+    color: #FFFFFF;
+}
+
+
+/* Input */
+
+
+
+.input__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input__name {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+.input__name span {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+
+.input__name input {
+    max-width: 269px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    color: white;
+}
+
+
+
+.input__surname {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 31px;
+}
+
+
+
+.input__surname span {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+.input__surname input {
+    max-width: 269px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    color: white;
+}
+
+
+
+
+
+.input__number {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+.input__number span {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 27px;
+
+
+    color: #FFFFFF;
+}
+
+
+
+
+.input__number input {
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none;
+    width: 100%;
+    max-width: 569.4px;
+}
+
+
+
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
+.textarea span {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+
+
+.textarea textarea {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    max-width: 569.4px;
+    width: 100%;
+    height: 91px;
+    border-bottom: 1px solid #FFFFFF;
+    resize: none;
+    color: #fff;
+}
+
+
+
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyright span {
+    margin-top: 28px;
+    margin-bottom: 33px;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 138%;
+    /* identical to box height, or 19px */
+
+    
+    color: #000000;
+
+}
+
+
+
+
+.input__button {
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    /* Nav */
+    .navbar-light .navbar-nav .nav-link {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.76px;
+        line-height: 17px;
+    }
+
+    .navbar-light .navbar-nav .nav-link span {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10.92px;
+        line-height: 17px;
+        color: #fff;
+    }
+
+
+    /* Carousel */
+    .carousel-caption h3 {
+        font-size: 40.32px;
+        line-height: 160%;
+    }
+    
+    
+    .carousel-caption p {
+        font-weight: 400;
+        font-size: 20.16px;
+        line-height: 160%;
+    }
+
+    /* Jumbotron */
+
+
+    .card-title span {
+        font-size: 18px;
+    }
+
+
+    .input__text {
+        justify-content: right;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: 400;
+        font-size: 9.17px;
+        line-height: 17px;
+    }
+    .navbar-light .navbar-nav .nav-link span {
+        font-weight: 400;
+        font-size: 8.515px;
+        line-height: 17px;
+    }
+
+
+
+    .carousel-caption h3 {
+        font-size: 31.44px;
+        line-height: 160%;
+    }
+    
+    
+    .carousel-caption p {
+        font-weight: 500;
+        font-size: 15.72px;
+        line-height: 160%;
+    }
+
+
+    /* Jumbotron */
+}
+@media (max-width: 576px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: 700;
+        font-size: 6.8px;
+        line-height: 17px;
+        letter-spacing: .049em;
+    }
+    
+    
+    .navbar-light .navbar-nav .nav-link span {
+        font-weight: 400;
+        font-size: 6.37px;
+        line-height: 17px;
+    }
+
+
+    .carousel-caption h3 {
+        font-size: 23.52px;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+    
+    
+    .carousel-caption p {
+        font-weight: 500;
+        font-size: 11.76px;
+        line-height: 160%;
+    }
+
+    /* Jumbotron */
+    .card {
+        margin: 0  0 30px 0;
+    }
+
+
+
+    .contact__text {
+        font-size: 35px;
+    }
+
+    .contact__context {
+        font-size: 17.5px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    }
+    /*--- Fixed Background Image --*/
+    figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+    }
